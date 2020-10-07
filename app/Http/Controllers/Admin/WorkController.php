@@ -12,12 +12,13 @@ class WorkController extends Controller
   {
     return view('admin.work.create');
   }
-
-  public function create()
+  // 以下を追記
+  public function create(Request $request)
   {
+    // admin/work/createにリダイレクトする
     return redirect('admin/work/create');
   }
-
+  
   public function edit()
   {
     return view('admin.work.edit');
