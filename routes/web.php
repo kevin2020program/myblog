@@ -22,7 +22,10 @@ Route::group(['prefix' => 'admin' , 'middleware' => 'auth'], function() {
     Route::post('work/create', 'Admin\WorkController@create');
     Route::get('work/edit', 'Admin\WorkController@edit');
     Route::post('work/edit', 'Admin\WorkController@update');
+    Route::get('work', 'Admin\WorkController@index');
+    Route::get('work/delete', 'Admin\WorkController@delete');
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
