@@ -12,4 +12,10 @@ class Works extends Model
     public static $rules = array(
         'name' => 'required',
     );
+
+    public function histories()
+    {
+      return $this->hasMany('App\History');
+
+    }
 }

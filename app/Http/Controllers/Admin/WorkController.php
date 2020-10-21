@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Works;
+use App\History;
+use Carbon\Carbon;
 
 class WorkController extends Controller
 {
@@ -86,6 +88,11 @@ class WorkController extends Controller
 
     // 該当するデータを上書きして保存する
     $works->fill($works_form)->save();
+
+    $history = new History;
+    $history->works_id = $works->id;
+    $history->edited_at = Carbon::now();
+    $history->save();
     
     return redirect('admin/work');
   }
