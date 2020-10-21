@@ -37324,6 +37324,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/front.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/front.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/work.scss":
 /*!**********************************!*\
   !*** ./resources/sass/work.scss ***!
@@ -37336,15 +37347,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/work.scss ***!
-  \****************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/work.scss ./resources/sass/front.scss ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\s-pengqin.pan\Documents\techboost\myblog\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\Users\s-pengqin.pan\Documents\techboost\myblog\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\s-pengqin.pan\Documents\techboost\myblog\resources\sass\work.scss */"./resources/sass/work.scss");
+__webpack_require__(/*! C:\Users\s-pengqin.pan\Documents\techboost\myblog\resources\sass\work.scss */"./resources/sass/work.scss");
+module.exports = __webpack_require__(/*! C:\Users\s-pengqin.pan\Documents\techboost\myblog\resources\sass\front.scss */"./resources/sass/front.scss");
 
 
 /***/ })
